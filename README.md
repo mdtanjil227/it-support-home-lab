@@ -1,112 +1,62 @@
-# IT Support Home Lab
+# IT Support Home Lab — osTicket Help Desk
 
-## Overview
-This project demonstrates hands-on IT support skills by simulating real-world technical issues and resolving them in a virtual lab environment.
+A self-directed IT support home lab built using VMware Workstation, 
+Ubuntu Server 24.04, and Windows 10. This project simulates a real 
+help desk environment using osTicket as the ticketing system.
 
-## Environment
-- Windows Virtual Machine
-- Linux (Ubuntu) Virtual Machine
-- VMware Workstation
+## Lab Environment
 
----
+| Component | Details |
+|---|---|
+| Host Machine | Windows 11 |
+| Server VM | Ubuntu Server 24.04 — IP: 192.168.64.128 |
+| Client VM | Windows 10 — IP: 192.168.64.129 |
+| Network | VMware NAT |
 
-## Issue 1: Network Connectivity Problem
+## What Was Built
 
-**Problem:**  
-Unable to connect to the internet on Windows VM  
+- Deployed Apache web server and MySQL database on Ubuntu Server
+- Installed and configured osTicket v1.18.1 help desk system
+- Configured UFW firewall — allowed ports 22 (SSH) and 80 (HTTP)
+- Created and resolved realistic IT support tickets
+- Documented troubleshooting steps in a runbook
 
-**Steps Taken:**  
-- Checked IP configuration using `ipconfig`  
-- Verified network adapter settings  
-- Attempted to ping external servers  
+## Technologies Used
 
-**Solution:**  
-- Renewed IP address using `ipconfig /renew`  
-- Restarted network adapter  
+`Ubuntu Server 24.04` `Apache2` `MySQL` `PHP` `osTicket` 
+`UFW Firewall` `OpenSSH` `VMware Workstation` `Windows 10`
 
-**Result:**  
-Internet connectivity restored successfully  
+## Network Diagram
 
----
+![Network Diagram](Network_Diagram_drawio.png)
 
-## Issue 2: User Login Failure
+## Screenshots
 
-**Problem:**  
-User unable to log into system  
+### Apache Web Server Running
+![Apache Status](screenshots/apache-status.png)
 
-**Steps Taken:**  
-- Checked user account status  
-- Verified permissions  
+### osTicket Installation Success
+![osTicket Install](screenshots/osticket-install.png)
 
-**Solution:**  
-- Reset user password  
-- Updated user permissions  
+### Admin Panel — Ticket Queue
+![Ticket Queue](screenshots/ticket-queue.png)
 
-**Result:**  
-User successfully logged in  
+### Resolved Ticket
+![Resolved Ticket](screenshots/ticket-resolved.png)
 
----
+### UFW Firewall Rules
+![Firewall](screenshots/ufw-status.png)
 
-## Issue 3: Software Installation Issue
+## Documentation
 
-**Problem:**  
-Application failed to install properly  
-
-**Steps Taken:**  
-- Reviewed installation logs  
-- Re-downloaded installer  
-
-**Solution:**  
-- Reinstalled application with correct settings  
-
-**Result:**  
-Application installed and working correctly  
-
----
-
-## Issue 4: Remote Desktop Connection Failure
-
-**Problem:**  
-Unable to connect to the Windows VM using Remote Desktop  
-
-**Steps Taken:**  
-- Verified Remote Desktop settings on the target machine  
-- Checked if the system was reachable using `ping`  
-- Confirmed firewall settings were not blocking the connection  
-
-**Solution:**  
-- Enabled Remote Desktop in system settings  
-- Allowed Remote Desktop through Windows Firewall  
-- Verified correct IP address and credentials  
-
-**Result:**  
-Successfully established Remote Desktop connection  
-
----
-
-## Issue 5: Slow System Performance
-
-**Problem:**  
-System running slow and applications taking too long to respond  
-
-**Steps Taken:**  
-- Opened Task Manager to monitor CPU and memory usage  
-- Identified high resource usage by background applications  
-- Checked startup programs  
-
-**Solution:**  
-- Disabled unnecessary startup applications  
-- Ended high-resource background tasks  
-- Restarted system  
-
-**Result:**  
-System performance improved and applications responded normally  
-
----
+- [Troubleshooting Runbook](IT_Support_Home_Lab_-_Troubleshooting_Runbook.docx)
 
 ## Skills Demonstrated
-- Technical Troubleshooting  
-- System Configuration & Administration  
-- Networking Basics  
-- User Account Management  
-- Documentation & Issue Reporting  
+
+- Linux server administration
+- Web server setup and configuration (Apache)
+- Database management (MySQL)
+- Help desk ticketing workflow (osTicket)
+- Firewall configuration (UFW)
+- Network troubleshooting and documentation
+- Virtual machine management (VMware)
