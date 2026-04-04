@@ -2,7 +2,7 @@
 
 **Author:** Md Tanjil Sarwar  
 **Environment:** VMware Home Lab (Ubuntu Server 24.04 + Windows 10 Client)  
-**Date:** April 2026
+**Date:** January 2026
 
 ---
 
@@ -17,7 +17,7 @@
   3. Instructed user to forget the network — Settings → Network → WiFi → Forget
   4. User reconnected and entered password again
 - **Resolution:** Successfully reconnected after forgetting and rejoining network
-- **Status:** ✅ Resolved
+- **Status:** Resolved
 
 ---
 
@@ -32,7 +32,7 @@
   3. Disabled faulty add-ins found in safe mode
   4. Rebuilt Outlook profile via Control Panel → Mail → Show Profiles → Add
 - **Resolution:** Corrupt profile rebuilt, Outlook opened successfully
-- **Status:** ✅ Resolved
+- **Status:** Resolved
 
 ---
 
@@ -47,7 +47,7 @@
   3. Instructed user to change password on next login
   4. Advised user to set up password expiry reminders going forward
 - **Resolution:** Account unlocked, user logged in with temporary password and set new one
-- **Status:** ✅ Resolved
+- **Status:** Resolved
 
 ---
 
