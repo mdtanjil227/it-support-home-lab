@@ -49,7 +49,7 @@ help desk environment using osTicket as the ticketing system.
 
 ## Documentation
 
-- [Troubleshooting Runbook](IT_Support_Home_Lab_-_Troubleshooting_Runbook.docx)
+- [Troubleshooting Runbook](TROUBLESHOOTING_RUNBOOK.md)
 
 ## Skills Demonstrated
 
